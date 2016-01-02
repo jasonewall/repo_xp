@@ -12,6 +12,7 @@ module RepoXp
 
     def initialize(config = :default)
       raise "whoa buddy, let's not get crazy here" unless config == :default
+      @adapter = InMemoryAdapter.new
     end
 
     def entity_class
