@@ -2,9 +2,11 @@ module RepoXp
   class BaseRepository
     attr_reader :adapter
 
+    ENTITY_NAME_PATTERN = /(.+)Repository$/
+
     class << self
       def entity_class
-        self.name =~ /(.+)Repository$/ and Object.const_get($1)
+        self.name =~ ENTITY_NAME_PATTERN and Object.const_get($1)
       end
     end
 
