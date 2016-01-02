@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+gem 'repo_xp', path: '../../'
+
+# Specify your gem's dependencies in repo_xp-active_record.gemspec
+gemspec
