@@ -6,6 +6,8 @@ require "repo_xp/active_record"
 # You can add fixtures and/or initialization code here to make experimenting
 # with your gem easier. You can also use a different console, if you like.
 
+ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'db/test.sqlite3')
+
 # (If you use this, don't forget to add pry to your Gemfile!)
 # require "pry"
 # Pry.start

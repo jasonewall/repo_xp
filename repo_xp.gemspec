@@ -9,8 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jason Wall"]
   spec.email         = ["javajo@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{Implementation of the repository pattern for flexible Rails applications.}
   spec.homepage      = "https://github.com/jasonewall/repo_xp"
   spec.license       = "MIT"
 
