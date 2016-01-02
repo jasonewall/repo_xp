@@ -15,6 +15,11 @@ describe RepoXp::BaseRepository do
     it 'should guess the class name from the repository class name' do
       expect(repo_class.entity_class).to eq(entity_class)
     end
+
+    it 'should expect repositories and entities to be in the same namespace' # maybe?
+    # we need to decide something about repositories inside modules
+    # but worst case scenario if the convention doesn't line up subclasses can always override
+    # `entity_class`
   end
 
   describe '#entity_class' do
@@ -22,6 +27,4 @@ describe RepoXp::BaseRepository do
       expect(repo_class.new.entity_class).to eq(entity_class)
     end
   end
-
-  context 'nested in modules' # TODO
 end
